@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table border="1">
+<tr><th>TICKER</th><th>PRICE</th></tr>
+<tr><td>RELIANCE</td><td>298.77</td></tr>
+<tr><td>AIRTEL</td><td>134.77</td></tr>
+<tr><td>VODAFONE</td><td>89.77</td></tr>
+<tr><td>IDEA</td><td>24.77</td></tr>
+</table>
+
+
+<form name="trade" action="http://localhost:5061/trade/do" method="GET">
+<h1>Stock Trading</h1>
+<table border="1">
+<tr><td>Ticker:</td><td><input type="text" name="ticker" id="ticker"></td></tr>
+<tr><td>Quantity:</td><td><input type="number" name="qty" id="qty" min="10"></td></tr>
+<tr><td><input type="submit" name="submit" value="submit"></td></tr>
+</table>
+</form>
+
+</body>
+</html>
